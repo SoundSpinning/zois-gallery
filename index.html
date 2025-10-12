@@ -1,0 +1,242 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<!-- 
+	GRID layout - 
+	Made by Sound Spinning | soundspinning.co.uk 
+-->
+  <head>
+		<!-- 1. Core Meta Tags -->
+		<!-- ================= -->
+		<!-- Character Encoding -->
+		<meta charset="UTF-8">
+		
+		<!-- Viewport (Mobile Optimization) -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Code Author -->
+		<meta name="author" content="Sound Spinning" />
+		
+		<!-- Primary Title (Include Keywords + Location) -->
+		<title>GRID layout | Sound Spinning | Brighton</title>
+	
+		<!-- Meta Description (Include Services + Location + Call-to-Action) -->
+		<meta name="description" content="Front-End Web Development services in Brighton, East Sussex.">
+	
+		<!-- Canonical URL (Avoid Duplicate Content) -->
+		<link rel="canonical" href="https://soundspinning.co.uk">
+	
+		<!-- Favicon (All Sizes) - https://realfavicongenerator.net -->
+		<link rel="shortcut icon" href="./favicon.ico" />
+		<link rel="icon" type="image/png" href="./favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+		<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+		<meta name="apple-mobile-web-app-title" content="Sound Spinning" />
+		<link rel="manifest" href="./site.webmanifest" />
+	
+		<!-- 2. Local SEO & Google Business Profile -->
+		<!-- ====================================== -->
+		<!-- Geo-Region Meta Tags -->
+		<!-- Country code -->
+		<meta name="geo.region" content="GB">
+		<!-- City name -->
+		<meta name="geo.placename" content="Brighton">
+		
+		<!-- Google Business Profile Verification (if applicable) -->
+		<!-- <meta name="google-site-verification" content="your_verification_code_here"> -->
+	
+		<!-- Local Business Schema Markup (JSON-LD) -->
+		<!-- <script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "LocalBusiness",
+		  "name": "Sound Spinning",
+		  "image": "https://soundspinning.co.uk/assets/logo.jpg",
+		  "@id": "https://soundspinning.co.uk",
+		  "url": "https://soundspinning.co.uk",
+		  "telephone": "",
+		  "priceRange": "$$",
+		  "address": {
+			"@type": "PostalAddress",
+			"streetAddress": "",
+			"addressLocality": "Brighton",
+			"addressRegion": "East Sussex",
+			"postalCode": "BN2 3AU",
+			"addressCountry": "GB"
+		  },
+		  "geo": {
+			"@type": "GeoCoordinates",
+			"latitude": 50.8327431,
+			"longitude": -0.1249901
+		  },
+		  "OpeningHoursSpecification": {
+			"@type": "OpeningHoursSpecification",
+			"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+			"opens": "09:00",
+			"closes": "17:00"
+		  },
+		  "sameAs": [
+			"https://www.facebook.com/soundspinning",
+			"https://www.instagram.com/soundspinning",
+			"https://g.page/your-google-business-profile"
+		  ]
+		}
+		</script> -->
+	
+		<!-- 3. Social Media & Open Graph (For Sharing) -->
+		<!-- ============================ -->
+		<!-- Open Graph (Facebook/LinkedIn) -->
+		<meta property="og:title" content="Sound Spinning | GRID layout | Brighton">
+		<meta property="og:description" content="Front-End Web Development services in Brighton, East Sussex.">
+		<meta property="og:image" content="https://soundspinning.co.uk/assets/logo.jpg">
+		<meta property="og:url" content="https://soundspinning.co.uk">
+		<meta property="og:type" content="website">
+		
+		<!-- Twitter Card (maybe redundant?) -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="Sound Spinning | GRID layout | Brighton">
+		<meta name="twitter:description" content="Front-End Web Development services in Brighton, East Sussex.">
+		<meta name="twitter:image" content="https://soundspinning.co.uk/assets/logo.jpg">
+
+    <!-- 4. Technical SEO & Performance -->
+		<!-- ============================== -->
+    <!-- FONTS -->
+		<!-- https://fonts.bunny.net/ - do not track, faster than G-fonts [?] -->
+    <link href="https://fonts.bunny.net/css?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.bunny.net/css?family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!-- Main STYLES -->
+    <!-- <link rel="stylesheet" href="./css/normalize.css" /> -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>	
+
+	<body>
+		<!-- Intro Modal -->
+		<section id="intro-modal">
+			<span class="close"> &cross; </span>
+			<div id="intro-text">
+				<div>
+					<strong>MUSIC</strong> 
+				</div>
+				<div>
+          <span>is important</span>
+				</div>
+				<div>
+					<strong>Zois ande Larres</strong><span>&apos; gallery</span>
+				</div>
+				<div class="loader">
+					<img src="./ripple.svg" alt="Loader">
+				</div>
+			</div>
+		</section>
+
+		<!-- Header -->
+		<header>
+			<h1>
+				<img src="https://sound-spinning-pics.imgix.net/zois/logo_zois_ande_larres.jpg?w=800&auto=compress,enhance,format" alt="Zois Ande Larres logo" style="width: 100px;">
+				<a href=""><strong>Zois Ande Larres</strong> <small>Gallery</small></a>
+			</h1>
+		</header>
+
+		<!-- Main | populated by `main.js` -->
+		<main id="grid" class="grid-gallery">
+		</main>
+
+		<!-- Pics MODAL -->
+		<section id="main-modal">
+			<span class="close"> &cross; </span>
+			<div id="modal-content">
+				<div id="modal-controls">
+					<span id="prev">&#10094; &#10094; Prev</span>
+					<span id="count"></span>
+					<span id="next">Next &#10095; &#10095;</span>
+				</div>
+				<img id="modal-img">
+				<span>
+			    <h2 id="modal-title"></h2>
+			    <span id="modal-caption"></span>
+				</span>
+				<a href="#" target="_blank"><button>Puzzle</button></a>
+				<!-- <details id="modal-details"></details> -->
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer>
+			<div class="foot-bar">
+				<span>
+					<a>ABOUT</a>
+					<!-- <span>&lpar;i&rpar;</span> -->
+					<span>&ii;</span>
+				</span>
+				<span>
+					<a>CONTROLS</a>
+					<span>&#9874;</span>
+				</span>
+				<span>
+					&copy; Sound Spinning - 2025
+				</span>
+			</div>
+
+		  <!-- About MODAL -->
+			<div id="about-modal">
+			  <span class="close">&cross;</span>
+				<span class="made-by">
+					Made by: <a href="https://soundspinning.co.uk" target="_blank">Sound Spinning</a>
+				</span>
+			  <section>
+					<h2>Zois ande Larres: </h2>
+					<span>90s rock band from Barakaldo (Basque Country).</span>
+				  
+				</section>
+				<section>
+					<section>
+					  <h2>Music player</h2>
+					  <ul>
+					  	<li><a href="https://soundspinning.github.io/zois-ande-larres/" target="_blank"><span>Zois ande Larres Music App</span></a></li>
+					  </ul>
+				  </section>
+				  <section>
+				  	<h2>Contact</h2>
+				  	<ul>Email: <a href="mailto:soundspinning@hotmail.com">soundspinning@hotmail.com</a></ul>
+				  </section>
+			  </section>
+			</div>
+
+			<!-- Controls MODAL -->
+			<div id="controls-modal">
+			  <span class="close">&cross;</span>
+					<!--Theme switch-->
+					<input type="checkbox" id="themeSwitch" name="theme-switch" class="theme-switch__input" />
+					<label for="themeSwitch" class="theme-switch__label">
+					  <span>Switch theme</span>
+					</label>
+
+					<!--Captions switch-->
+					<input type="checkbox" id="captionsSwitch" name="captions-switch" class="captions-switch__input" checked />
+					<label for="captionsSwitch" class="captions-switch__label">
+					  <span>AI captions</span>
+					</label>
+
+					<!--Gap switch-->
+					<span class="range">
+						<datalist id="values">
+					  	<option value="0" label="0"></option>
+					  	<option value="1" label="1"></option>
+					  	<option value="2" label="2"></option>
+					  	<option value="3" label="3"></option>
+					  	<option value="4" label="4"></option>
+					  	<option value="5" label="5"></option>
+					  </datalist>
+					  <input type="range" min="0" max="5" value="1" step="1" list="values" id="gapSwitch" name="gap-switch" class="gap-switch__input"/>
+					  <label for="gapSwitch" class="gap-switch__label">
+					    <span>Gap size</span>
+					  </label>
+					</span>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+		<script src="./js/main.js"></script>
+
+	</body>
+</html>
