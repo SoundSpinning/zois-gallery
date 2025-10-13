@@ -291,6 +291,8 @@ article img:hover {
 #intro-text div:nth-of-type(2) {
   display: none;
   /* animation: reveal 5s infinite; */
+  position: absolute;
+  top: 10vh;
 }
 
 #intro-text div span {
@@ -302,7 +304,7 @@ article img:hover {
   display: none;
   /* animation: reveal 7s infinite; */
   position: absolute;
-  top: 25vh;
+  top: 10vh;
 }
 
 #intro-text div strong {
