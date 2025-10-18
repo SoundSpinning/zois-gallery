@@ -61,6 +61,10 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
+h1 {
+  margin: 0;
+}
+
 html {
   box-sizing: border-box;
   font-size: var(--base-size, 16px);
@@ -432,12 +436,18 @@ ul, .made-by {
 
 header {
   display: flex;
-  flex-flow: row wrap;
+  gap: var(--gap);
+  flex-flow: row nowrap;
   /* CROSS flex axis */
   align-items: center;
   /* MAIN flex axis */
-  justify-content: space-around;
-  padding: var(--gap);
+  /* justify-content: space-between; */
+  padding: var(--gap) var(--gap) 0 var(--gap);
+}
+
+header small {
+  text-transform: capitalize;
+  font-size: 1.25rem;
 }
 
 footer {
