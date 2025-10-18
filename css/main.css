@@ -333,6 +333,11 @@ article img:hover {
   height: 100%;
 }
 
+#modal-img {
+  height: 100vh;
+  object-fit: contain;
+}
+
 #modal-controls {
   position: absolute;
   top: 1rem;
@@ -426,8 +431,13 @@ ul, .made-by {
 }
 
 header {
-  padding: 0 1rem;
-  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  /* CROSS flex axis */
+  align-items: center;
+  /* MAIN flex axis */
+  justify-content: space-around;
+  padding: var(--gap);
 }
 
 footer {
